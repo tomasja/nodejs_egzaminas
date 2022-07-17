@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/bills.js" defer></script>
+		<title>Group's bills | Split Bill</title>
+	</head>
+	<body class="d-flex flex-column h-100">
+		<div class="container">
+			<header class="pb-3 border-bottom">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid logo">
+						<a class="navbar-brand" href="#"
+							><img
+								src="img/split-bill-logo.png"
+								style="max-width: 100px"
+								alt="Split"
+						/></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="groups.html">My Groups</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="new-group.html">Add New Group</a>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="col-md-3 text-end">
+							<button type="button" class="btn btn-danger">Logout</button>
+						</div> -->
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="row g-3 py-md-5">
+					<h1></h1>
+				</div>
+				<div class="row g-2">
+					<h5>Group's bills:</h5>
+					<table class="table">
+						<thead class="table-light">
+							<tr>
+								<th>ID</th>
+								<th>Description</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+						<tfoot></tfoot>
+					</table>
+				</div>
+
+				<hr class="col-8 col-md-12 mb-12 py-md-1" />
+
+				<div class="row g-5">
+					<div class="col">
+						<h2>Other members of this group</h2>
+						<ul class="list-group list-group-flush" id="groupMembers"></ul>
+					</div>
+					<div class="col">
+						<h2>Add bill</h2>
+						<form id="newBill">
+							<div class="row mb-3">
+								<label for="newBillDescription" class="form-label"
+									>Description</label
+								>
+								<div class="col-sm-12">
+									<input
+										type="text"
+										class="form-control"
+										id="newBillDescription"
+										name="newBillDescription"
+									/>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<label for="newBillAmount" class="form-label">Amount</label>
+								<div class="input-group">
+									<input
+										type="text"
+										class="form-control"
+										aria-label="Euro amount (with dot and two decimal places)"
+										id="newBillAmount"
+										name="newBillAmount"
+									/>
+									<span class="input-group-text">€</span>
+									<span class="input-group-text">0.00</span>
+								</div>
+							</div>
+							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="submit" class="btn btn-primary col-4 mx-auto">
+									Add
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer class="pt-5 my-5 text-muted border-top">
+				NodeJS Exam - Tomas Jakaitis © 2022
+			</footer>
+		</div>
+	</body>
+	<!-- JavaScript Bundle with Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"
+	></script>
+</html>

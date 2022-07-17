@@ -1,0 +1,34 @@
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.logo img {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h2{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.logo h2, p{
+    text-align: center;
+    margin-top: 8px;
+}
+
+.login {
+    margin-top: 16px;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.groups-container a {
+    text-decoration: none;
+    color: black;
+};
